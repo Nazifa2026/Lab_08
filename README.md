@@ -15,7 +15,7 @@ In this lab you have learned about multiplexers and demultiplexers.
 Nazifa Bakhshi(49)
 
 ## Summary
-In this lab, we built a multiplexer (MUX) and demultiplexer (DEMUX) in Verilog and tested them on the Basys3 FPGA board. The MUX chose one of four 4-bit inputs and sent it to one output using two button selectors. Then the DEMUX took that output and sent it to one of four destinations using two other buttons. The center button enabled both modules, the switches were used for input data, and the LEDs showed the output. This lab helped show how MUX and DEMUX work together to control data flow in a digital system.
+In this lab, we built a multiplexer (MUX) and demultiplexer (DEMUX) in Verilog and tested them on the Basys3 board. The MUX chose one of four 4-bit inputs and sent it to one output using two button selectors. Then the DEMUX took that output and sent it to one of four destinations using two other buttons. The center button enabled both modules, the switches were used for input data, and the LEDs showed the output. This lab helped show how MUX and DEMUX work together to control data flow in a digital system.
 
 ## Lab Questions
 
