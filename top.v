@@ -10,7 +10,6 @@ module mux4(
 endmodule
 
 
-// 4-output, 4-bit wide demultiplexer
 module demux4(
     input [3:0] In,
     input [1:0] Sel,
@@ -26,15 +25,14 @@ module demux4(
 endmodule
 
 
-// Top-level module wiring mux -> demux
 module top(
     input [15:0] sw,
     input btnL, btnU, btnD, btnR, btnC,
     output [15:0] led
 );
     wire [3:0] mux_out;
-    wire [1:0] mux_sel   = {btnU, btnL};  // Sel[1]=btnU, Sel[0]=btnL
-    wire [1:0] demux_sel = {btnR, btnD};  // Sel[1]=btnR, Sel[0]=btnD
+    wire [1:0] mux_sel   = {btnU, btnL};  
+    wire [1:0] demux_sel = {btnR, btnD};  
 
     mux4 mux(
         .CEO(sw[3:0]),
@@ -55,4 +53,5 @@ module top(
         .School(led[11:8]),
         .RibShack(led[15:12])
     );
+
 endmodule
